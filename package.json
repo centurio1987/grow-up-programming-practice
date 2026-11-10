@@ -1,0 +1,11 @@
+{
+  "name": "grow-up-programming-practice",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

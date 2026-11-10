@@ -1,0 +1,9 @@
+# dependencies (bun install)
+node_modules
+
+# caches
+.cache
+*.tsbuildinfo
+
+# Finder (macOS)
+.DS_Store

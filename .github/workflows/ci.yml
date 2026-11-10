@@ -1,0 +1,18 @@
+name: CI
+
+# 실습 시험은 스텁을 채우기 전까지 일부러 실패한다. 그래서 여기서는 설치와 타입 검사만 한다.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  typecheck:
+    name: 설치 · 타입 검사
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bunx tsc --noEmit
